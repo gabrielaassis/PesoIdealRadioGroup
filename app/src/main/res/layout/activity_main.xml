@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="75dp">
+
+        <RadioButton
+            android:id="@+id/radio_homem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Homem" />
+
+        <RadioButton
+            android:id="@+id/radio_mulher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Mulher" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textview_selecionou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Você selecionou:"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"/>
+
+    <Button
+        android:id="@+id/button_aplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="170dp"
+        android:text="Aplicar" />
+
+    <ImageView
+        android:id="@+id/imageViewFoto"
+        android:layout_width="242dp"
+        android:layout_height="213dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="282dp"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/homemsimbolo" />
+
+</RelativeLayout>
